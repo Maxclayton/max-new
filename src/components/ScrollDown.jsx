@@ -4,8 +4,6 @@ Command: npx gltfjsx@6.2.12 public/models/ufoLightrot4.glb
 */
 
 import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
-import MyCanvas from './myCanvas'
 import { motion } from 'framer-motion';
 import './ScrollDown.css'
 
@@ -21,7 +19,7 @@ const ScrollDown = () => {
         animate={{ y: [0, 30, 0], scale: 1}}
         transition={{
           repeat: Infinity,
-          duration: 5
+          duration: 3.5
         }}
       >
         <div className='circle'></div>

@@ -22,8 +22,20 @@ const Hero = () => {
                         transition={{ duration: 1 }}
                     >
                         <h1 className='header-text'>Max Clayton</h1>
-                        <p>I build things on the web</p>
+                        <div className='header-sub-text'>
+                        <div>
+                        <motion.div 
+                        className='header-sub-bg'
+                            initial={{ width: 0 }}
+                            animate={{ width: 163 }}
+                            transition={{ duration: .5, delay: 1 }}
+                        ></motion.div>
+                        </div>
+                     <p>I build things on the web</p>    
+
+                        </div>
                     </motion.div>
+             
                 </div>
                 <div className='main-right'>
                     <MyCanvas />

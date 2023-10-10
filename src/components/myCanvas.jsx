@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
+import { motion } from 'framer-motion';
 import './hero.css'
 
 
