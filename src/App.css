@@ -1,0 +1,12 @@
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  place-items: normal;
+}
+
+h1, p {
+  margin: 0;
+}

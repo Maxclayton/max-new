@@ -1,0 +1,29 @@
+.main-container-about {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-container-about p {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #f6f4f5;
+    width: 790px;
+}
+
+.tilt-cards {
+    border-radius: 6px;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #587792;
+}
+
+.tilt-card-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
