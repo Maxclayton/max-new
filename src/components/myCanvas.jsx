@@ -97,6 +97,7 @@ function MyCanvas() {
           <Box rotation={[2.7, 1, 2.7]} scale={.75} />
           <Box position={[2, -3, -2]} scale={.4} />
           <Pyramid position={[-2, -3, -2]} scale={.5} />
+
         </Canvas>
       )}
     </div>

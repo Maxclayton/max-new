@@ -12,9 +12,9 @@ function App() {
     <>
     <Hero />
     {/* <About /> */}
-    About
+    {/* About
     Work
-    Projects 
+    Projects  */}
     </>
   )
 }
