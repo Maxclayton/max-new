@@ -12,23 +12,30 @@ const ScrollDown = () => {
 
   return (
     <div className='scroll'>
-      <div className='scroll-container'>
-      <a href="#about">
       <motion.div
-        initial={{ y: 0, scale: 1 }}
-        animate={{ y: [0, 30, 0], scale: 1}}
-        transition={{
-          repeat: Infinity,
-          duration: 3.5
-        }}
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        transition={{ duration: 3, delay: 2.25 }}
       >
-        <div className='circle'></div>
-        </motion.div>
-      </a>
-   
+        <div className='scroll-container'>
 
-      </div>
-  
+          <a href="#about">
+            <motion.div
+              initial={{ y: 0, scale: 1 }}
+              animate={{ y: [0, 30, 0], scale: 1 }}
+              transition={{
+                repeat: Infinity,
+                duration: 3.5
+              }}
+            >
+              <div className='circle'></div>
+            </motion.div>
+          </a>
+
+
+
+        </div>
+      </motion.div>
     </div>
   )
 }

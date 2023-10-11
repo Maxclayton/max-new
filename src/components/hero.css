@@ -78,7 +78,7 @@
 @media screen and (max-width: 940px) {
 
     .main-container {
-        height: 87vh;
+        height: 100vh;
     }
    .canvas-container {
     height: 616px;
