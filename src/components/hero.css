@@ -60,7 +60,6 @@
 
 .header-sub-bg {
     background-color: #5E00F0;
-    width: 163px;
     height: 15px;
     position: absolute;
     margin-top: 11px;
@@ -68,8 +67,9 @@
     margin-right: 49px;
 }
 
-p {
+.header-sub-text p {
     z-index: 2;
+    font-size: 20px;
 }
 
 

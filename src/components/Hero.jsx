@@ -27,8 +27,8 @@ const Hero = () => {
                         <motion.div 
                         className='header-sub-bg'
                             initial={{ width: 0 }}
-                            animate={{ width: 163 }}
-                            transition={{ duration: .5, delay: 1 }}
+                            animate={{ width: 203 }}
+                            transition={{ duration: .2, delay: 1.5 }}
                         ></motion.div>
                         </div>
                      <p>I build things on the web</p>    
