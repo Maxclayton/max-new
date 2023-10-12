@@ -23,19 +23,19 @@ const Hero = () => {
                     >
                         <h1 className='header-text'>Max Clayton</h1>
                         <div className='header-sub-text'>
-                        <div>
-                        <motion.div 
-                        className='header-sub-bg'
-                            initial={{ width: 0 }}
-                            animate={{ width: 203 }}
-                            transition={{ duration: .2, delay: 1.5 }}
-                        ></motion.div>
-                        </div>
-                     <p>I build things on the web</p>    
+                            <div>
+                                <motion.div
+                                    className='header-sub-bg'
+                                    initial={{ width: 0 }}
+                                    animate={{ width: 203 }}
+                                    transition={{ duration: .2, delay: 1.5 }}
+                                ></motion.div>
+                            </div>
+                            <p>I build things on the web</p>
 
                         </div>
                     </motion.div>
-             
+
                 </div>
                 <div className='main-right'>
                     <MyCanvas />

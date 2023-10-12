@@ -1,10 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Hero from './components/Hero'
-import ScrollDown from './components/ScrollDown'
-import About from './components/About'
+
+import './App.css';
+import Hero from './components/Hero';
+import About from './components/About';
+import Work from './components/Work';
 
 function App() {
 
@@ -12,9 +10,8 @@ function App() {
     <>
     <Hero />
     <About />
-    {/* About
-    Work
-    Projects  */}
+    <Work />
+    {/* Projects */}
     </>
   )
 }

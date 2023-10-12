@@ -79,6 +79,7 @@
 
     .main-container {
         height: 100vh;
+        margin-top: -110px;
     }
    .canvas-container {
     height: 616px;

@@ -10,12 +10,14 @@ import './ScrollDown.css'
 
 const ScrollDown = () => {
 
+
+
   return (
     <div className='scroll'>
       <motion.div
         initial={{ opacity: 0}}
         animate={{ opacity: 1}}
-        transition={{ duration: 3, delay: 2.25 }}
+        transition={{ duration: 3, delay: 2 }}
       >
         <div className='scroll-container'>
 
@@ -28,6 +30,7 @@ const ScrollDown = () => {
                 duration: 3.5
               }}
             >
+
               <div className='circle'></div>
             </motion.div>
           </a>
