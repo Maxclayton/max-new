@@ -35,15 +35,20 @@ const colorStreak3 = {
   hidden: { width: 0 }
 };
 
+
 const About = () => {
 
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible');
     }
   }, [controls, inView]);
+
+  const isMobileView = window.innerWidth < 768;
+
 
   return (
     <div id="about" className='main-container-about'>
@@ -52,7 +57,7 @@ const About = () => {
         <motion.div
           ref={ref}
           animate={controls}
-          initial="hidden"
+          initial={isMobileView ? "visible" : "hidden"} // Conditionally set the initial state
           variants={squareVariants}
           className="square"
         >
@@ -83,7 +88,7 @@ const About = () => {
         <motion.div
           ref={ref}
           animate={controls}
-          initial="hidden"
+          initial={isMobileView ? "visible" : "hidden"} // Conditionally set the initial state
           variants={squareVariants2}
           className="square"
         >
@@ -114,7 +119,7 @@ const About = () => {
         <motion.div
           ref={ref}
           animate={controls}
-          initial="hidden"
+          initial={isMobileView ? "visible" : "hidden"} // Conditionally set the initial state
           variants={squareVariants3}
           className="square"
         >
