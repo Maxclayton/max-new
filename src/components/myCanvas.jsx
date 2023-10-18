@@ -71,7 +71,7 @@ function MyCanvas() {
   }
 
   return (
-    <div className='canvas-container'>
+    <div className='canvas-container2'>
       {screenWidth > 900 ? (
 
         <Canvas>

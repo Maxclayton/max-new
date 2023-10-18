@@ -69,7 +69,7 @@ const About = () => {
                 <motion.div
                   className='about-bg'
                   animate={controls}
-                  initial="hidden"
+                  initial={isMobileView ? "visible" : "hidden"}
                   variants={colorStreak}
                 ></motion.div>        
               </div>
@@ -100,7 +100,7 @@ const About = () => {
               <motion.div
                   className='about-bg2'
                   animate={controls}
-                  initial="hidden"
+                  initial={isMobileView ? "visible" : "hidden"}
                   variants={colorStreak2}
                 ></motion.div>   
                 </div> 
@@ -131,7 +131,7 @@ const About = () => {
               <motion.div
                   className='about-bg3'
                   animate={controls}
-                  initial="hidden"
+                  initial={isMobileView ? "visible" : "hidden"}
                   variants={colorStreak3}
                   delay={10}
                 ></motion.div>   
