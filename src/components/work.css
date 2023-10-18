@@ -11,43 +11,64 @@
     text-align: center;
 }
 
-.TitleWrapper-sc-13izrht-0.fhstIq.timeline-item-title.active.rc-title {
-    background: #5E00F0;
-    color: white;
+.accordion {
+    width: 500px;
 }
 
-h1.CardTitle-sc-d7qjm1-3.tGzpB.rc-card-title {
-    font-size: 25px;
-}
-
-
-.TimelineControlContainer-sc-cif21b-4.fljXJB {
-    display: none;
-}
-h1.CardTitle-sc-d7qjm1-3.tGzpB.rc-card-title {
-    font-size: 25px;
-}
-.TimelineMain-sc-cif21b-2.ieecoE.horizontal {
-    width: 100%;
-}
-
-ul.TimelineHorizontalWrapper-sc-1dd6qhe-0.dqCaIV.horizontal.timeline-horizontal-container {
+.accordion-row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    padding: 50px;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.computer-container {
+    height: 700px;
+    width: 700px;
+    /* position: absolute; */
+    right: 0;
+}
+
+.date {
+    font-size: 12px;
+    margin-right: 50px;
+}
+
+.title-date {
+    width: 100%;
+    font-size: 10px;
+}
+
+.title-company 
+{
+    font-size: 25px;
+    margin-right: 15px;
+    
+}
+
+.title-title  {
+    font-size: 20px;
+    font-family: monospace;
+    text-transform: lowercase;
+    color: #956992;
 }
 
 @media screen and (max-width: 940px) {
 
-    ul.TimelineHorizontalWrapper-sc-1dd6qhe-0.dqCaIV.horizontal.timeline-horizontal-container {
-        display: contents;
-        flex-direction: row;
-        justify-content: space-around;
+    .accordion-row {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .TimelineMain-sc-cif21b-2.ieecoE.horizontal {
-        width: 100%;
+    .accordion {
+        width: 352px;
     }
+
+    .computer-container {
+        height: 420px;
+    }
+
   }
 
 

@@ -1,7 +1,7 @@
+/* eslint-disable react/no-unknown-property */
 import { useState, useRef, useEffect } from 'react'
 import { Canvas, useFrame } from "@react-three/fiber";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
-import { motion } from 'framer-motion';
 import './hero.css'
 
 
@@ -41,11 +41,11 @@ function MyCanvas() {
         <sphereGeometry />
         <meshStandardMaterial color={"#5E00F0"} />
         <pointLight
-          color="#5E00F0" // Set the color of the light
-          intensity={100} // Adjust the intensity as needed
-          distance={10} // Adjust the distance the light travels
-          decay={2} // Adjust the light decay (falloff) rate
-          position={[0, 0, 0]} // Set the position to match the Sphere's position
+          color="#5E00F0" 
+          intensity={100} 
+          distance={10} 
+          decay={2} 
+          position={[0, 0, 0]} 
         />
         <EffectComposer>
           <Bloom mipmapBlur luminanceThreshold={5} />
