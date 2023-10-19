@@ -132,7 +132,7 @@ const About = () => {
                   className='about-bg3'
                   animate={controls}
                   initial={isMobileView ? "visible" : "hidden"}
-                  variants={colorStreak3}
+n                  variants={colorStreak3}
                   delay={10}
                 ></motion.div>   
                 </div> 

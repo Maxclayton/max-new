@@ -7,15 +7,18 @@ import './work.css';
 
 const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+  const isMobileView = window.innerWidth < 768;
+
 
   return (
     <>
           <mesh>
                 <primitive
                     object={computer.scene}
-                    scale={12}
+                    scale={isMobileView ? 12 : 12}
                     rotation={[.5, -.7, .2]}
-                    position={[0, -1, 0]}
+                    position={isMobileView ? [0, -1, 0] :  [0, -1, 0]}
+                    display={"none"}
                 />
             </mesh>
     </>
@@ -24,17 +27,19 @@ const Computers = () => {
 
 const ComputersCanvas = () => {
   const sectionRef = useRef(null);
-  const [rotateSpeed, setRotateSpeed] = useState(200);
+  const [rotateSpeed, setRotateSpeed] = useState(1.5);
 
 
   // Function to handle intersection changes
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setTimeout(() => {
-            setRotateSpeed(1.5)
-            console.log("here")
-        }, 500);
+        setRotateSpeed(1.5)
+        console.log("here")
+
+        // setTimeout(() => {
+        //     setRotateSpeed(1.5)
+        // }, 200);
       }
     });
   };
@@ -53,7 +58,7 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <div className="canvas-container" ref={sectionRef}>
+    <div className="canvas-container" >
       <Canvas>
         <OrbitControls
           enableZoom={false}
@@ -67,6 +72,7 @@ const ComputersCanvas = () => {
         <Computers />
         <Preload all />
       </Canvas>
+      <div ref={sectionRef}></div>
     </div>
   );
 };
