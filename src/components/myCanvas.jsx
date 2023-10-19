@@ -41,11 +41,11 @@ function MyCanvas() {
         <sphereGeometry />
         <meshStandardMaterial color={"#5E00F0"} />
         <pointLight
-          color="#5E00F0" 
-          intensity={100} 
-          distance={10} 
-          decay={2} 
-          position={[0, 0, 0]} 
+          color="#5E00F0"
+          intensity={100}
+          distance={10}
+          decay={2}
+          position={[0, 0, 0]}
         />
         <EffectComposer>
           <Bloom mipmapBlur luminanceThreshold={5} />
@@ -72,6 +72,7 @@ function MyCanvas() {
 
   return (
     <div className='canvas-container2'>
+
       {screenWidth > 900 ? (
 
         <Canvas>

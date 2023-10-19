@@ -97,3 +97,17 @@
       }
 
   }
+
+  @media screen and (max-width: 400px) {
+
+    .computer-container {
+        width: 325px;
+    }
+
+
+    .canvas-container {
+        width: 325px;
+    }
+
+
+}

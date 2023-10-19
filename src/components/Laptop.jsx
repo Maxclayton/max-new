@@ -15,7 +15,7 @@ const Computers = () => {
           <mesh>
                 <primitive
                     object={computer.scene}
-                    scale={isMobileView ? 12 : 12}
+                    scale={isMobileView ? 10 : 12}
                     rotation={[.5, -.7, .2]}
                     position={isMobileView ? [0, -1, 0] :  [0, -1, 0]}
                     display={"none"}
@@ -58,7 +58,7 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <div className="canvas-container" >
+    <div ref={sectionRef} className="canvas-container" >
       <Canvas>
         <OrbitControls
           enableZoom={false}

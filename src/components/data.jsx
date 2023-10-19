@@ -1,12 +1,20 @@
-const items = [
-    {
-      title: "Clozd",
-      cardTitle: "Front End Developer",
-      cardSubtitle:
-        "October 2022 - Present",
-      cardDetailedText: `At Clozd, I managed our customer facing https://clozd.com website.  Since I started here, I have completely revamped the website, changing every single page to match our new brand refresh.  Using tools like Javascript, jQuery, HTML, CSS, and Webflow I was able to accomplish this.  I also have worked on our product which is built in React.  `, 
+var myLink = 'https://clozd.com ';
 
-    },
+const items = [
+  {
+    title: "Clozd",
+    cardTitle: "Front End Developer",
+    cardSubtitle: "October 2022 - Present",
+    cardDetailedText: (
+      <span>
+        At Clozd, I managed our customer-facing{' '}
+        <a href={myLink} target="_blank" rel="noopener noreferrer">
+          {myLink}
+        </a>
+         website. Since I started here, I have completely revamped the website, changing every single page to match our new brand refresh. Using tools like Javascript, jQuery, HTML, CSS, and Webflow, I was able to accomplish this. I also have worked on our product, which is built in React.
+      </span>
+    ),
+  },
     {
       title: "DentalQore",
       cardTitle: "Front End Developer",
