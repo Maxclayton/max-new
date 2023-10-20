@@ -1,0 +1,51 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300&display=swap');
+
+.contact-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contact-container h1 {
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.contact-left {
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-right {
+    width: fit-content;
+}
+
+.contact-container p {
+    width: 500px;
+    font-size: 25px;
+}
+
+.pipes {
+    margin-top: 50px;
+}
+
+.contact-bg {
+    width: 224px;
+    background: #5D349B;
+    height: 32px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 22px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .contact-wrap {
+        flex-direction: column;
+    }
+
+    .contact-container p {
+        width: auto;
+    }
+  }

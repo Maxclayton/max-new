@@ -61,11 +61,11 @@ const About = () => {
           variants={squareVariants}
           className="square"
         >
-          <div className='about-card'>
+          <div className='about-card software'>
             <div className='about-card-top'>
               <FontAwesomeIcon className='font-a-icons' icon={faCode} />
               <div className='about-title'>
-                <h2>Software Developer</h2>
+                <h2 className=''>Software Developer</h2>
                 <motion.div
                   className='about-bg'
                   animate={controls}
@@ -92,7 +92,7 @@ const About = () => {
           variants={squareVariants2}
           className="square"
         >
-          <div className='about-card'>
+          <div className='about-card front'>
             <div className='about-card-top'>
               <FontAwesomeIcon className='font-a-icons' icon={faLaptop} />
               <div className='about-title'>
@@ -123,11 +123,11 @@ const About = () => {
           variants={squareVariants3}
           className="square"
         >
-          <div className='about-card'>
+          <div  className='about-card growing'>
             <div className='about-card-top'>
               <FontAwesomeIcon className='font-a-icons' icon={faPaperPlane} />
               <div className='about-title'>
-              <h2>Growing</h2>
+              <h2 >Growing</h2>
               <motion.div
                   className='about-bg3'
                   animate={controls}

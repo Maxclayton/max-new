@@ -24,7 +24,6 @@
 
   .accordion-row {
       display: flex;
-      padding: 50px;
       gap: 50px;
       width: 100%;
       justify-content: center;

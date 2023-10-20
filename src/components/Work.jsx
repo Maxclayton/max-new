@@ -51,7 +51,7 @@ const Work = () => {
                             key={index}
                             initial={{ y: 100, opacity: 0 }}
                             variants={slideIn}
-                            transition={{ delay: index - .05 }}
+                            transition={{ delay: item.delay }}
 
                         >
                             <Accordion

@@ -15,6 +15,7 @@
     flex-direction: row;
     margin-top: 50px;
     justify-content: center;
+    gap: 25px;
 }
 
 
@@ -26,43 +27,62 @@
 .projects-right {
     max-width: 40%;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .proj-large img {
-    width: 627px;
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+.project {
+    border-radius: 6px;
 }
 
 .proj-small img {
-    width: 400px;
+    width: 100%;
+    border-radius: 6px;
 }
 
 .project.proj-large {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    color: black;
+    background-color: #EDEBD7;
+    color: white;
     position: relative;
-
 }
 
 
 .project.proj-small {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    color: black;
-    width: 400px;
+    color: white;
+    width: 585px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    height: 304.5px;
 }
 
 .title-drawer {
-    background-color: blue;
+    background-color: #357A9C;
     position: absolute;
     width: 100%;
     z-index: 5;
     bottom: 0;
-    margin-left: -25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+
 }
+
+.title-drawer a {
+    color: black;
+    text-decoration: underline;
+}
+
 
 .title-drawer:hover > .hidden-text {
     display: block;
@@ -74,7 +94,9 @@
 
 .hidden-text {
     display: none;
-    transition: 2s
+    transition: 2s;
+    width: 80%;
+    margin-left: 15px;
 }
 
 @media screen and (max-width: 940px) {
@@ -96,14 +118,27 @@
 }
 
 .project.proj-small {
-    width: 285px !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .project.proj-large {
-    width: 285px;
+    width: 100%;
 }
 
 .proj-small img {
     width: 100%;
+}
+
+.hidden-text {
+    display: block;
+}
+
+.title-drawer {
+    height: auto !important;
+    position: relative;
+    overflow: visible;
 }
   }
