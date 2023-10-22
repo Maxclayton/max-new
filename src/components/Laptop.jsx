@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import LaptopNew from "./LaptopType";
 import './work.css';
 
 
@@ -12,15 +13,15 @@ const Computers = () => {
 
   return (
     <>
-          <mesh>
-                <primitive
-                    object={computer.scene}
-                    scale={isMobileView ? 10 : 12}
-                    rotation={[.5, -.7, .2]}
-                    position={isMobileView ? [0, -1, 0] :  [0, -1, 0]}
-                    display={"none"}
-                />
-            </mesh>
+      <mesh>
+        <primitive
+          object={computer.scene}
+          scale={isMobileView ? 10 : 12}
+          rotation={[.5, -.7, .2]}
+          position={isMobileView ? [0, -1, 0] : [0, -1, 0]}
+          display={"none"}
+        />
+      </mesh>
     </>
   );
 };
@@ -50,7 +51,7 @@ const ComputersCanvas = () => {
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-    
+
     // Clean up the observer when the component unmounts
     return () => {
       observer.disconnect();
@@ -64,12 +65,14 @@ const ComputersCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
-          autoRotate={true}
+          // autoRotate={true}
           autoRotateSpeed={rotateSpeed}
         />
         <directionalLight intensity={10} />
         <pointLight intensity={50} />
-        <Computers />
+        {/* <Computers /> */}
+        <LaptopNew position={[0, -1, 0]}
+          scale={15} rotation={[.5, -.7, .2]} />
         <Preload all />
       </Canvas>
       <div ref={sectionRef}></div>
