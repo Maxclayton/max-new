@@ -21,15 +21,15 @@ const Work = () => {
         setOpenAccordion(index === openAccordion ? -1 : index); // Toggle the Accordion open/close
     };
 
-    const isMobileView = window.innerWidth < 768;
+    // const isMobileView = window.innerWidth < 768;
 
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
-    const slideIn = {
-        hidden: { y: 100, opacity: 0 },
-        visible: { y: 1, opacity: 1 }
-    };
+    // const slideIn = {
+    //     hidden: { y: 100, opacity: 0 },
+    //     visible: { y: 1, opacity: 1 }
+    // };
 
     useEffect(() => {
         if (inView) {
@@ -38,7 +38,8 @@ const Work = () => {
     }, [controls, inView]);
 
     return (
-        <div className="work-container">
+        <div ref={ref}
+            className="work-container">
             <h1>Professional Experience</h1>
             <div className='accordion-row'>
                 <div className='accordion'
@@ -46,12 +47,12 @@ const Work = () => {
 
                     {data.map((item, index) => (
                         <motion.div
-                            ref={ref}
-                            animate={controls}
                             key={index}
                             initial={{ y: 100, opacity: 0 }}
-                            variants={slideIn}
+                            whileInView={{ y: 0, opacity: 1}}
                             transition={{ delay: item.delay }}
+                            viewport={{ once: true }}
+
 
                         >
                             <Accordion
@@ -79,16 +80,16 @@ const Work = () => {
 
                 </div>
                 <div className='computer-container'>
-                    <motion.div
+                    {/* <motion.div
                         initial={isMobileView ? { y: -100, opacity: 0 } : { x: 100, opacity: 0 }}
                         whileInView={isMobileView ? { y: 0, opacity: 1 } : { x: 1, opacity: 1 }}
                         viewport={{ once: true, amount: 0.5 }}
-                        transition={{ delay: 1 }}
+                        transition={{ delay: 2 }}
 
-                    >
+                    > */}
                         <ComputersCanvas />
 
-                    </motion.div>
+                    {/* </motion.div> */}
                 </div>
 
             </div>
